@@ -24,11 +24,8 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND ITpp_sources
-    nada_impl.cc
-    Hamming_Encoder_impl.cc
-)
+    )
 
 set(ITpp_sources "${ITpp_sources}" PARENT_SCOPE)
 if(NOT ITpp_sources)
@@ -58,13 +55,10 @@ GR_LIBRARY_FOO(gnuradio-ITpp RUNTIME_COMPONENT "ITpp_runtime" DEVEL_COMPONENT "I
 include(GrTest)
 
 include_directories(${CPPUNIT_INCLUDE_DIRS})
-
 list(APPEND test_ITpp_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_ITpp.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ITpp.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Encoder.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_nada.cc
-)
+    )
 
 add_executable(test-ITpp ${test_ITpp_sources})
 

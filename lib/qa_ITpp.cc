@@ -26,15 +26,12 @@
  */
 
 #include "qa_ITpp.h"
-#include "qa_nada.h"
-#include "qa_Hamming_Encoder.h"
+
 
 CppUnit::TestSuite *
 qa_ITpp::suite()
 {
   CppUnit::TestSuite *s = new CppUnit::TestSuite("ITpp");
-  s->addTest(gr::ITpp::qa_nada::suite());
-  s->addTest(gr::ITpp::qa_Hamming_Encoder::suite());
 
   return s;
 }

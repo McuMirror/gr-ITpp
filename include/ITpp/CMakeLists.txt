@@ -22,6 +22,5 @@
 ########################################################################
 install(FILES
     api.h
-    nada.h
-    Hamming_Encoder.h DESTINATION include/ITpp
+    DESTINATION include/ITpp
 )
