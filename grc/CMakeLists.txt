@@ -17,5 +17,6 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    DESTINATION share/gnuradio/grc/blocks
+    ITpp_Hamming_Encoder.xml
+    ITpp_Hamming_Decoder.xml DESTINATION share/gnuradio/grc/blocks
 )

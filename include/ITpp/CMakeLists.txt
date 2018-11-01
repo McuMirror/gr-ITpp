@@ -22,5 +22,6 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/ITpp
+    Hamming_Encoder.h
+    Hamming_Decoder.h DESTINATION include/ITpp
 )

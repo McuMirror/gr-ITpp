@@ -25,7 +25,8 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND ITpp_sources
-    )
+    Hamming_Encoder_impl.cc
+    Hamming_Decoder_impl.cc )
 
 set(ITpp_sources "${ITpp_sources}" PARENT_SCOPE)
 if(NOT ITpp_sources)
